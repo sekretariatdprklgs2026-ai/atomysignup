@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluang Bisnis Atomy | Absolute Quality, Absolute Price</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        atomy: '#0066B3', // Blue Atomy
+                        atomyLight: '#E6F0FA',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 25px -5px rgba(0, 102, 179, 0.2);
+            }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <span class="text-3xl text-atomy font-bold">ATOMY</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-atomy transition-colors font-medium">Beranda</a>
+                    <a href="#keunggulan" class="hover:text-atomy transition-colors font-medium">Keunggulan</a>
+                    <a href="#produk" class="hover:text-atomy transition-colors font-medium">Produk</a>
+                    <a href="#kontak" class="bg-atomy text-white px-6 py-2 rounded-full font-medium hover:bg-atomy/90 transition-all shadow-md hover:shadow-lg">Gabung Sekarang</a>
+                </div>
+                <button class="md:hidden text-atomy text-2xl" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobileMenu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block px-3 py-2 rounded-md hover:bg-atomyLight hover:text-atomy">Beranda</a>
+                <a href="#keunggulan" class="block px-3 py-2 rounded-md hover:bg-atomyLight hover:text-atomy">Keunggulan</a>
+                <a href="#produk" class="block px-3 py-2 rounded-md hover:bg-atomyLight hover:text-atomy">Produk</a>
+                <a href="#kontak" class="block px-3 py-2 bg-atomy text-white rounded-md text-center mt-2">Daftar Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-atomyLight to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left space-y-6">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-gray-800 leading-tight">
+                        Bisnis <span class="text-atomy">Tanpa Risiko</span>, <br> Sukses Bersama
+                    </h1>
+                    <p class="text-lg text-gray-600">
+                        Konsep unik <strong>"Belanja Dapat Komisi"</strong>. Ganti tempat belanja kebutuhan sehari-hari di <strong>Atomy Shoping Mall</strong>, dapatkan penghasilan tambahan & passive income.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#kontak" class="inline-block bg-atomy text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1">
+                            <i class="fab fa-whatsapp mr-2"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Imagen_de_Atomy_global.png" alt="Atomy Logo" class="w-full max-w-md mx-auto drop-shadow-xl animate-pulse">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Atomy / Keunggulan -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Kenapa Memilih Atomy?</h2>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">Sistem bisnis yang berbeda, mengutamakan kenyamanan dan keuntungan bersama.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-atomyLight rounded-full flex items-center justify-center text-atomy text-2xl mb-6">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modal GRATIS & Tanpa Target</h3>
+                    <p class="text-gray-600">Daftar menjadi member tidak dipungut biaya. Tidak ada target penjualan, tidak ada kewajiban belanja bulanan. 100% Fleksibel.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-atomyLight rounded-full flex items-center justify-center text-atomy text-2xl mb-6">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kualitas Premium</h3>
+                    <p class="text-gray-600">Prinsip <strong>Absolute Quality, Absolute Price</strong> (Kualitas Mutlak Harga Mutlak). Produk berkualitas tinggi setara brand luar negeri namun harga sangat terjangkau.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-atomyLight rounded-full flex items-center justify-center text-atomy text-2xl mb-6">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sistem Kerjasama</h3>
+                    <p class="text-gray-600">Bukan persaingan, tapi gotong royong. Sistem biner yang saling menguntungkan. Spillover dan dukungan tim sangat membantu pertumbuhan bisnis.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                 <!-- Card 4 -->
+                 <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-atomyLight rounded-full flex items-center justify-center text-atomy text-2xl mb-6">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tanpa Stok & Kirim Barang</h3>
+                    <p class="text-gray-600">Tidak perlu repot simpan stok, packing, atau antar paket. Semua logistik diurus langsung oleh kantor pusat Atomy.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-atomyLight rounded-full flex items-center justify-center text-atomy text-2xl mb-6">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Legal & Terpercaya</h3>
+                    <p class="text-gray-600">Perusahaan global yang sudah beroperasi di 28+ negara. Di Indonesia sudah resmi terdaftar APLI, memiliki izin BPOM dan Sertifikasi Halal MUI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ragam Produk Atomy</h2>
+                <p class="mt-4 text-gray-500">Semua kebutuhan keluarga ada di sini</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-pills text-atomy"></i> Kesehatan
+                </div>
+                <div class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-spa text-atomy"></i> Kecantikan & SkinCare
+                </div>
+                <div class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-shower text-atomy"></i> Perawatan Tubuh
+                </div>
+                <div class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-utensils text-atomy"></i> Makanan & Minuman
+                </div>
+                <div class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-home text-atomy"></i> Perlengkapan Rumah
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Kontak Section -->
+    <section id="kontak" class="py-20 bg-atomy text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Memulai Bisnis?</h2>
+            <p class="text-lg mb-8 opacity-90">Pendaftaran member GRATIS. Yuk bergabung dan bangun masa depan finansial yang lebih baik bersama Atomy!</p>
+            
+            <a href="https://wa.me/6285260350818?text=Halo,%20saya%20mau%20daftar%20member%20Atomy%20gratis" target="_blank" class="inline-flex items-center gap-3 bg-white text-atomy text-xl font-bold px-10 py-4 rounded-full shadow-2xl hover:bg-gray-100 transition-all transform hover:scale-105">
+                <i class="fab fa-whatsapp text-2xl"></i> Hubungi Kami via WhatsApp
+            </a>
+            <p class="mt-6 text-sm">Karena keluarga Anda layak mendapatkan masa depan yang lebih baik!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Bisnis Atomy. Website dibuat untuk keperluan promosi.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when link clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
